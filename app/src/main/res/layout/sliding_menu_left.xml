@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_230sdp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/main_blue"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    tools:context=".ui.main.view.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header_menu_left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        android:background="@color/colorSecondPrimary"
+        android:gravity="center">
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_logo_menu" />
+        </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="آسانسور اهورا"
+            android:textColor="@color/grey_800"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLogo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRule"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="4dp"
+                android:background="@color/menu_red"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_rules"
+                    app:tint="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center|left"
+                    android:text="قوانین"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutAboutUs"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="4dp"
+                android:background="@color/menu_green"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_about_us"
+                    app:tint="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center|left"
+                    android:text="درباره ما"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutWebsite"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="4dp"
+                android:background="@color/menu_blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_web"
+                    app:tint="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center|left"
+                    android:text="وبسایت"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutContactUs"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="4dp"
+                android:background="@color/menu_purple"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_contact_us"
+                    app:tint="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center|left"
+                    android:text="ارتباط با ما"
+                    android:textColor="@color/colorWhite"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAboutCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_400" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="شرکت ایده آگرین مکانیاب شهر"
+            android:textColor="@color/grey_600"
+            android:textDirection="ltr"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

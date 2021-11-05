@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_blue"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    tools:context=".ui.repair_request.view.RepairRequestActivity"
+    tools:ignore="MissingPrefix">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorSecondPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="@dimen/icon_back_size"
+                android:layout_height="@dimen/icon_back_size"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/icon_back_padding"
+                android:src="@drawable/ic_back_right" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"
+                android:layout_toLeftOf="@+id/imageViewBack"
+                android:gravity="center"
+                android:text="درخواست تعمیر"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_repair" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="شماره تماس اول: "
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPrimaryPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp"
+                tools:text="918111111" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="شماره تماس دوم:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSecondaryPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp"
+                tools:text="918111111" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="آدرس: "
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp"
+                tools:text="sdsds" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="انتخاب محصول:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_11ssp"
+                android:visibility="gone" />
+
+
+            <Spinner
+                android:id="@+id/spinnerContract"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_39sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_et"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="نوع خرابی را تعیین کنید: "
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spinnerElevatorFailur"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_39sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_arrow_bottom"
+                    app:tint="@color/grey_600" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="توضیحات:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp"
+                android:gravity="right|top"
+                tools:text="sdsds" />
+
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_badge_toolbar"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ثبت درخواست"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

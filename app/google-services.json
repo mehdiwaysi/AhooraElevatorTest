@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "830798373759",
+    "project_id": "ahooraelevator-f955c",
+    "storage_bucket": "ahooraelevator-f955c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830798373759:android:b49a380d1654c66d5df04a",
+        "android_client_info": {
+          "package_name": "com.snayab.ahooraelevator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830798373759-4neimdrh512jbitiiva73gcsdtc5n6pg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snayab.ahooraelevator",
+            "certificate_hash": "7f88bed5115e0ace553c33d5ad42fad25f13c0c7"
+          }
+        },
+        {
+          "client_id": "830798373759-lqkjo0iqsg0aqsqir4sm3jn900otfi44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSMR-q3K-HZANHmJpxN7gLi_WXRq1EPfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830798373759-lqkjo0iqsg0aqsqir4sm3jn900otfi44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_elevator"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_87sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_stopwatch"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:paddingTop="8dp"
+                android:text="30"
+                android:textColor="@color/grey_700"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="تایید کد"
+                    android:textColor="@color/main_button"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNameAndFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="نام و نام خانوادگی" />
+
+                <EditText
+                    android:id="@+id/edtNameAndFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/selector_et"
+                    android:ems="10"
+                    android:textSize="@dimen/_13ssp"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+                <TextView
+                    android:id="@+id/txtEnterCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="کد دریافتی را وارد نمایید" />
+
+                <EditText
+                    android:id="@+id/edtVerificationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/selector_et"
+                    android:ems="10"
+                    android:textSize="@dimen/_13ssp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+                <Button
+                    android:id="@+id/btnVerifyCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_badge_toolbar"
+                    android:textSize="@dimen/_13ssp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="ورود به برنامه"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtChangeNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textSize="@dimen/_12ssp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="تغییر شماره"
+                        android:textColor="@color/colorDanger" />
+
+                    <TextView
+                        android:id="@+id/txtSendVerificationCodeAgain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="ارسال مجدد کد"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/md_red_200" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

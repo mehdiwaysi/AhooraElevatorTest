@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingTop="10dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewService"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_checked" />
+
+        <TextView
+            android:id="@+id/textViewListServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageViewService"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:textColor="@color/grey_700"
+            android:textSize="@dimen/_12ssp"
+            tools:text="مهر 1400" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

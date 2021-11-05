@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_blue"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:background="@color/colorSecondPrimary">
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circleView"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_profile"
+                    app:tint="@color/colorSecondPrimary" />
+            </com.github.florent37.shapeofview.shapes.CircleView>
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circleView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp"
+                tools:text="مهدی ویسی" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                tools:text="0918111111" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_135sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_20sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_marginRight="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/ic_contract"
+                        app:tint="@color/colorSecondPrimary" />
+
+                    <TextView
+                        android:id="@+id/textViewContractCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_17sdp"
+                        tools:text="تعداد قرارداد ها : "
+                        android:textColor="@color/grey_700"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/grey_300"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_marginRight="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/ic_repair"
+                        app:tint="@color/colorSecondPrimary" />
+
+                    <TextView
+                        android:id="@+id/textViewRepairRequests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_17sdp"
+                        tools:text="درخواست های اعلام خرابی : "
+                        android:textColor="@color/grey_700"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewRepairRequestsStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="وضعیت آخرین درخواست: "
+                    android:textColor="@color/colorSecondPrimary"
+                    android:textSize="@dimen/_11ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_300"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_marginRight="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_price"
+                        app:tint="@color/colorSecondPrimary" />
+
+                    <TextView
+                        android:id="@+id/textViewPriceRequests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_17sdp"
+                        tools:text="درخواست های استعلام قیمت : "
+                        android:textColor="@color/grey_700"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewPriceRequestsStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="وضعیت آخرین درخواست: "
+                    android:textColor="@color/colorSecondPrimary"
+                    android:textSize="@dimen/_11ssp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            app:lottie_fileName="blue_loading.json"
+            app:lottie_loop="true"
+            app:lottie_speed="2" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</ScrollView>

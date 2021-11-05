@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewPaymentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_badge_blue_title"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:paddingLeft="25dp"
+            android:paddingTop="3dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/colorWhite"
+            android:textDirection="ltr"
+            android:textSize="@dimen/_11ssp"
+            tools:text="در تاریخ 08/1/1400" />
+
+
+        <ImageView
+            android:id="@+id/imageViewService"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_below="@+id/textViewPaymentDate"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_payment" />
+
+
+        <TextView
+            android:id="@+id/textViewPaymentPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPaymentDate"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageViewService"
+            android:gravity="center|right"
+            android:paddingTop="3dp"
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/_11ssp"
+            tools:text="پرداخت 1" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

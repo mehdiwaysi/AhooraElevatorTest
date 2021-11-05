@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#188ef2</color>
+    <color name="colorSecondPrimary">#27b4fb</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#27b4fb</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="main_button">#010101</color>
+    <color name="status">#0d4c82</color>
+
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+    <color name="colorInfo">#eeeeee</color>
+    <color name="colorBlue">#0099CC</color>
+    <color name="colorSuccess">#00C853</color>
+    <color name="colorDanger">#cc0022</color>
+    <color name="colorWarning">#fd6728</color>
+    <color name="md_red_200">#EF9A9A</color>
+    <color name="main_green">#3b5724</color>
+    <color name="main_brown">#23140f</color>
+    <color name="main_blue">#e6f7ff</color>
+    <color name="snackbar_background">#fd6728</color>
+
+    <color name="menu_green">#738972</color>
+    <color name="menu_red">#cc707f</color>
+    <color name="menu_purple">#9f81a3</color>
+    <color name="menu_blue">#8db9b8</color>
+    <color name="title_blue">#199dde</color>
+    <color name="menu_yellow">#9d997e</color>
+
+
+</resources>

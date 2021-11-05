@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_blue"
+    tools:context=".ui.contracts.view.ContractsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorSecondPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="@dimen/icon_back_size"
+                android:layout_height="@dimen/icon_back_size"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/icon_back_padding"
+                android:src="@drawable/ic_back_right" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"
+                android:layout_toLeftOf="@+id/imageViewBack"
+                android:gravity="center"
+                android:text="لیست قرارداد ها"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="انتخاب قرارداد"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp">
+
+                <Spinner
+                    android:id="@+id/spinnerContract"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_39sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:src="@drawable/ic_arrow_bottom"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="30dp"
+                    app:tint="@color/grey_600" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="تاریخ قرارداد:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:gravity="center"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12ssp"
+                tools:text="1400/07/29" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="نوع آسانسور:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/textViewElevatorType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:gravity="center"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12ssp"
+                tools:text="کششی" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="تاریخ نصب:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/textViewInstallationDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:gravity="center"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12ssp"
+                tools:text="1400/08/10" />
+
+            <ImageView
+                android:id="@+id/imageViewDownload"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="دانلود جزئیات قرار داد"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey_500" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="مبلغ کل قرارداد:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/textViewTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_et"
+                android:gravity="center"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12ssp"
+                tools:text="10,000,000 تومان" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="پرداختی ها:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:nestedScrollingEnabled="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="مانده بدهی:"
+                android:textColor="@color/grey_800"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/textViewRemainingAmount"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/selector_et"
+                android:gravity="center"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12ssp"
+                tools:text="7,000,000" />
+
+
+            <Button
+                android:id="@+id/btnPeriodicService"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_badge_toolbar"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:text=" سرویس های دوره ای"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

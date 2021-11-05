@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.snayab.ahooraelevator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ahoora_Elevator"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        tools:targetApi="n">
+        <activity
+            android:name=".ui.price_request.view.RequestPriceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.periodic_services.view.PeriodicServicesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.contracts.view.ContractsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.repair_request.view.RepairRequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.fragments.category.view.ElevatorDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.enter.view.UserEnterActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.code_verification.view.CodeVerificationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.about_company.view.AboutCompanyActivity" />
+        <activity
+            android:name=".ui.splash.view.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.about_us.view.AboutUsActivity" />
+        <activity android:name=".ui.rules.view.RulesActivity" />
+        <activity android:name=".ui.contact_us.view.ContactUsActivity" />
+
+    </application>
+
+</manifest>
